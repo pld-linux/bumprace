@@ -35,7 +35,7 @@ muzykê.
 rm -f missing
 aclocal
 autoconf
-automake -a -c
+automake -a -c -f
 %configure
 %{__make}
 
@@ -46,8 +46,8 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-#%{__install} %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Games
-#%{__install} %{SOURCE2} $RPM_BUILD_ROOT%{_pixmapsdir}/%{name}.png
+#install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Games
+#install %{SOURCE2} $RPM_BUILD_ROOT%{_pixmapsdir}/%{name}.png
 
 gzip -9nf NEWS README AUTHORS
 
