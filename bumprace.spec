@@ -2,7 +2,7 @@ Summary:	A game
 Summary(pl):	Gra
 Name:		bumprace
 Version:	1.45
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications/Games
 Source0:	http://user.cs.tu-berlin.de/~karlb/%{name}/%{name}-%{version}.tar.gz
