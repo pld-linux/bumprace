@@ -5,8 +5,8 @@ Version:	1.45
 Release:	1
 License:	GPL
 Group:		X11/Applications/Games
-Source0:	http://www.linux-games.com/%{name}/%{name}-%{version}.tar.gz
-# Source0-md5:	48e2f125594adae752bb42b77b854f4f
+Source0:	http://user.cs.tu-berlin.de/~karlb/%{name}/%{name}-%{version}.tar.gz
+# Source0-md5:	c7dc43c8ee65141b069c6c5cfc1f483f
 #Source1:	%{name}.desktop
 #Source2:	%{name}.png
 URL:		http://www.linux-games.com/
