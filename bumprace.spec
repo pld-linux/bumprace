@@ -54,7 +54,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc NEWS README AUTHORS
 %attr(755,root,root) %{_bindir}/*
-#%{_mandir}/man6/*
+#%%{_mandir}/man6/*
 %{_datadir}/%{name}
-#%{_pixmapsdir}/*
-#%{_applnkdir}/Games/*
+#%%{_pixmapsdir}/*
+#%%{_applnkdir}/Games/*
