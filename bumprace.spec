@@ -49,14 +49,12 @@ rm -rf $RPM_BUILD_ROOT
 #install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Games
 #install %{SOURCE2} $RPM_BUILD_ROOT%{_pixmapsdir}/%{name}.png
 
-gzip -9nf NEWS README AUTHORS
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc NEWS README AUTHORS
 %attr(755,root,root) %{_bindir}/*
 #%{_mandir}/man6/*
 %{_datadir}/%{name}
