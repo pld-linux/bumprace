@@ -17,8 +17,6 @@ BuildRequires:	automake
 BuildRequires:	libpng-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_prefix		/usr/X11R6
-%define		_mandir		%{_prefix}/man
 
 %description
 This is a clone of the classic "Black Box" Game, but it has better
