@@ -11,8 +11,8 @@ Source0:	http://www.linux-games.com/%{name}/%{name}-%{version}.tar.gz
 URL:		http://www.linux-games.com/
 BuildRequires:	SDL-devel >= 1.2.0
 BuildRequires:	SDL_mixer-devel >= 1.2.0
-BuildRequires:	autoconf
 BuildRequires:	XFree86-devel
+BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libpng-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
