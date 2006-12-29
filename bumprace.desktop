@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=BumpRace
+Comment=A funny action game written with SDL
+Comment[pl]=Zabawna gra oparta o SDL
+Exec=bumprace
+Icon=bumprace.xpm
+Terminal=false
+Type=Application
+Categories=Game;ArcadeGame;
+Encoding=UTF-8
+# vi: encoding=utf-8
