@@ -7,7 +7,7 @@ Summary(pl):	Zabawna gra oparta o SDL
 Name:		bumprace
 Version:	1.5.2
 Release:	1
-License:	GPL
+License:	GPL v2+
 Group:		X11/Applications/Games
 Source0:	http://user.cs.tu-berlin.de/~karlb/bumprace/%{name}-%{version}.tar.gz
 # Source0-md5:	0f2a30553cf2b412c262087149cc63c8
@@ -59,7 +59,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc NEWS README AUTHORS
+%doc AUTHORS ChangeLog FAQ README 
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/%{name}
 %{_desktopdir}/%{name}.desktop
