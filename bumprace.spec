@@ -1,17 +1,22 @@
-Summary:	A game
-Summary(pl):	Gra
+#
+# Conditional build:
+%bcond_without	SDL_mixer	# build without SDL_mixer
+#
+Summary:	A funny action game written with SDL
+Summary(pl):	Zabawna gra oparta o SDL
 Name:		bumprace
-Version:	1.45
-Release:	2
+Version:	1.5.2
+Release:	1
 License:	GPL
 Group:		X11/Applications/Games
-Source0:	http://user.cs.tu-berlin.de/~karlb/%{name}/%{name}-%{version}.tar.gz
-# Source0-md5:	c7dc43c8ee65141b069c6c5cfc1f483f
-#Source1:	%{name}.desktop
-#Source2:	%{name}.png
+Source0:	http://user.cs.tu-berlin.de/~karlb/bumprace/%{name}-%{version}.tar.gz
+# Source0-md5:	0f2a30553cf2b412c262087149cc63c8
+Source1:	%{name}.desktop
+Source2:	%{name}.xpm
 URL:		http://www.linux-games.com/
 BuildRequires:	SDL-devel >= 1.2.0
-BuildRequires:	SDL_mixer-devel >= 1.2.0
+BuildRequires:	SDL_image-devel >= 1.2.0
+%{?with_SDL_mixer:BuildRequires:	SDL_mixer-devel >= 1.2.0}
 BuildRequires:	XFree86-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -21,12 +26,12 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 
 %description
-This is a clone of the classic "Black Box" Game, but it has better
-graphics and music.
+BumpRace is a simple 1 or 2 player game where players choose among
+four vehicles and race through a multi-level maze.
 
 %description -l pl
-To jest klon klasycznej gry "Black Box", lecz ma lepsz± grafikê i
-muzykê.
+BumpRace jest prost± gr± dla 1 lub 2 osób, w której gracze wybieraj±
+spo¶ród czterech pojazdów i ¶cigaj± siê w wielopoziomowym labiryncie.
 
 %prep
 %setup -q
@@ -41,13 +46,13 @@ rm -f missing
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%{__install} -d $RPM_BUILD_ROOT{%{_pixmapsdir},%{_applnkdir}/Games}
+install -d $RPM_BUILD_ROOT{%{_desktopdir},%{_pixmapsdir}}
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-#install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Games
-#install %{SOURCE2} $RPM_BUILD_ROOT%{_pixmapsdir}/%{name}.png
+install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
+install %{SOURCE2} $RPM_BUILD_ROOT%{_pixmapsdir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -56,7 +61,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc NEWS README AUTHORS
 %attr(755,root,root) %{_bindir}/*
-#%%{_mandir}/man6/*
 %{_datadir}/%{name}
-#%%{_pixmapsdir}/*
-#%%{_applnkdir}/Games/*
+%{_desktopdir}/%{name}.desktop
+%{_pixmapsdir}/%{name}.xpm
