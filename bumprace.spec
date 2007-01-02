@@ -13,7 +13,7 @@ Source0:	http://user.cs.tu-berlin.de/~karlb/bumprace/%{name}-%{version}.tar.gz
 # Source0-md5:	0f2a30553cf2b412c262087149cc63c8
 Source1:	%{name}.desktop
 Source2:	%{name}.xpm
-URL:		http://www.linux-games.com/
+URL:		http://www.linux-games.com/bumprace
 BuildRequires:	SDL-devel >= 1.2.0
 BuildRequires:	SDL_image-devel >= 1.2.0
 %{?with_SDL_mixer:BuildRequires:	SDL_mixer-devel >= 1.2.0}
