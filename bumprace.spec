@@ -3,7 +3,7 @@
 %bcond_without	SDL_mixer	# build without SDL_mixer
 #
 Summary:	A funny action game written with SDL
-Summary(pl.UTF-8):   Zabawna gra oparta o SDL
+Summary(pl.UTF-8):	Zabawna gra oparta o SDL
 Name:		bumprace
 Version:	1.5.2
 Release:	1
