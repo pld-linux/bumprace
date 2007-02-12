@@ -3,7 +3,7 @@
 %bcond_without	SDL_mixer	# build without SDL_mixer
 #
 Summary:	A funny action game written with SDL
-Summary(pl):	Zabawna gra oparta o SDL
+Summary(pl.UTF-8):   Zabawna gra oparta o SDL
 Name:		bumprace
 Version:	1.5.2
 Release:	1
@@ -29,9 +29,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 BumpRace is a simple 1 or 2 player game where players choose among
 four vehicles and race through a multi-level maze.
 
-%description -l pl
-BumpRace jest prost± gr± dla 1 lub 2 osób, w której gracze wybieraj±
-spo¶ród czterech pojazdów i ¶cigaj± siê w wielopoziomowym labiryncie.
+%description -l pl.UTF-8
+BumpRace jest prostÄ… grÄ… dla 1 lub 2 osÃ³b, w ktÃ³rej gracze wybierajÄ…
+spoÅ›rÃ³d czterech pojazdÃ³w i Å›cigajÄ… siÄ™ w wielopoziomowym labiryncie.
 
 %prep
 %setup -q
