@@ -5,12 +5,12 @@
 Summary:	A funny action game written with SDL
 Summary(pl.UTF-8):	Zabawna gra oparta o SDL
 Name:		bumprace
-Version:	1.5.2
+Version:	1.5.3
 Release:	1
 License:	GPL v2+
 Group:		X11/Applications/Games
 Source0:	http://user.cs.tu-berlin.de/~karlb/bumprace/%{name}-%{version}.tar.gz
-# Source0-md5:	0f2a30553cf2b412c262087149cc63c8
+# Source0-md5:	a72733718ee6eed8cd1657db89bf8e0d
 Source1:	%{name}.desktop
 Source2:	%{name}.xpm
 URL:		http://www.linux-games.com/bumprace/
