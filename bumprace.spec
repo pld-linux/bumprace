@@ -17,7 +17,6 @@ URL:		http://www.linux-games.com/bumprace/
 BuildRequires:	SDL-devel >= 1.2.0
 BuildRequires:	SDL_image-devel >= 1.2.0
 %{?with_SDL_mixer:BuildRequires:	SDL_mixer-devel >= 1.2.0}
-BuildRequires:	XFree86-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libjpeg-devel
