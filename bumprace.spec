@@ -7,6 +7,7 @@ Summary(pl.UTF-8):	Zabawna gra oparta o SDL
 Name:		bumprace
 Version:	1.5.3
 Release:	1
+Epoch:		1
 License:	GPL v2+
 Group:		X11/Applications/Games
 Source0:	http://user.cs.tu-berlin.de/~karlb/bumprace/%{name}-%{version}.tar.gz
@@ -22,7 +23,6 @@ BuildRequires:	automake
 BuildRequires:	libjpeg-devel
 BuildRequires:	libpng-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
 
 %description
 BumpRace is a simple 1 or 2 player game where players choose among
