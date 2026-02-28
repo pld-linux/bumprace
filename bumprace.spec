@@ -6,7 +6,7 @@ Summary:	A funny action game written with SDL
 Summary(pl.UTF-8):	Zabawna gra oparta o SDL
 Name:		bumprace
 Version:	1.5.3
-Release:	2
+Release:	3
 Epoch:		1
 License:	GPL v2+
 Group:		X11/Applications/Games
